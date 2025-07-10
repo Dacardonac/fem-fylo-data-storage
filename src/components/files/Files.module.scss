@@ -1,0 +1,43 @@
+.files {
+  width: 325px;
+  height: 200px;
+  background-color: var(--blue-850);
+  margin-bottom: 18px;
+  border-radius: 20px 130px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+
+  &__figure {
+    user-select: none;
+    margin-bottom: 30px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1rem;
+
+    &-svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--white);
+      cursor: pointer;
+    }
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: var(--blue-950);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    &-input {
+      display: none;
+    }
+  }
+}
