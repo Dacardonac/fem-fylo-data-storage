@@ -1,17 +1,21 @@
 .files {
-  width: 325px;
-  height: 200px;
+  width: 326px;
+  height: 201px;
   background-color: var(--blue-850);
-  margin-bottom: 18px;
-  border-radius: 20px 130px 20px 20px;
+  margin-bottom: 1rem;
+  border-radius: 10px 100px 10px 10px;
   display: flex;
+  gap: 32px;
   flex-direction: column;
   justify-content: center;
-  padding-left: 40px;
+  padding: 40px;
 
   &__figure {
     user-select: none;
-    margin-bottom: 30px;
+    &-logo {
+      width: 135px;
+      height: 39.27px;
+    }
   }
 
   &__icons {
@@ -19,8 +23,6 @@
     gap: 1rem;
 
     &-svg {
-      width: 22px;
-      height: 22px;
       fill: var(--white);
       cursor: pointer;
     }
@@ -29,11 +31,26 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 40px;
-      height: 40px;
+      width: 48px;
+      height: 48px;
       background-color: var(--blue-950);
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
+
+      &:nth-child(1) .files__icons-svg {
+        width: 19.18px;
+        height: 23.98px;
+      }
+
+      &:nth-child(2) .files__icons-svg {
+        width: 24px;
+        height: 19.2px;
+      }
+
+      &:nth-child(3) .files__icons-svg {
+        width: 24px;
+        height: 16px;
+      }
     }
 
     &-input {
