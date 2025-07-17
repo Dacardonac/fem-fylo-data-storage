@@ -14,7 +14,7 @@ const Stats = ({ minLength, maxLength }: StatsProps) => {
 
   useEffect(() => {
     const percentage = (used / max) * 100;
-    // Actualizamos una variable CSS personalizada
+
     const root = document.documentElement;
     root.style.setProperty('--fill-width', `${percentage}%`);
   }, [used]);
@@ -43,7 +43,12 @@ const Stats = ({ minLength, maxLength }: StatsProps) => {
           <p>{maxLength}</p>
         </div>
       </div>
-      <div className={c['stats__notification']}>{left} GB Left</div>
+      <div
+        className={`${c['stats__notification']} ${c['stats__notification-small']}`}
+      >
+        <span className={c['stats__notification-strong']}>{left}</span>
+        GB LEFT
+      </div>
     </article>
   );
 };

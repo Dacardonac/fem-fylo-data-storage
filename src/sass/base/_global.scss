@@ -4,6 +4,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: var(--blue-950);
+  background-image: url('/public/images/bg-mobile.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('/public/images/bg-desktop.webp');
+  }
 }

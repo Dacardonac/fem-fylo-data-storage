@@ -15,7 +15,7 @@ const Files = () => {
       <figure className={c['files__figure']}>
         <img
           className={c['files__figure-logo']}
-          src="/public/images/logo.svg"
+          src="/images/logo.svg"
           alt="Logo Fylo"
         />
       </figure>
@@ -23,21 +23,21 @@ const Files = () => {
         <div className={c['files__icons-container']}>
           <img
             className={c['files__icons-svg']}
-            src="/public/images/icon-document.svg"
+            src="/images/icon-document.svg"
             alt="icon-document"
           />
         </div>
         <div className={c['files__icons-container']}>
           <img
             className={c['files__icons-svg']}
-            src="/public/images/icon-folder.svg"
+            src="/images/icon-folder.svg"
             alt="icon-folder"
           />
         </div>
         <label className={c['files__icons-container']}>
           <img
             className={c['files__icons-svg']}
-            src="/public/images/icon-upload.svg"
+            src="/images/icon-upload.svg"
             alt="icon-upload"
           />
           <input
@@ -47,7 +47,6 @@ const Files = () => {
             style={{ display: 'none' }}
           />
         </label>
-
       </section>
     </article>
   );
