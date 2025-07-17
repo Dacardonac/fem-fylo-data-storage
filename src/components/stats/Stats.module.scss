@@ -1,71 +1,89 @@
 .stats {
-  width: 325px;
-  height: 160px;
+  width: 326px;
+  height: 154px;
   background-color: var(--blue-850);
   color: var(--white);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 1.5rem;
 
   &__info {
     text-align: center;
     font-size: 14px;
+    line-height: 115%;
+    color: var(--blue-200);
     margin-bottom: 1rem;
 
     &-strong {
-      font-weight: 700;
+      font-weight: bold;
     }
   }
 
   &__graph {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    position: relative;
 
     &-bar {
       appearance: none;
-      width: 100%;
-      height: 12px;
-      border-radius: 10px;
-      background: var(--blue-950); // Fallback
-      outline: none;
-      overflow: hidden;
+      width: 262px;
+      height: 20px;
+      border-radius: 999px;
+      background: var(--blue-950);
       position: relative;
+      z-index: 1;
       cursor: pointer;
+      overflow: hidden;
 
-      &::-webkit-slider-runnable-track {
-        background: transparent;
-        height: 12px;
-        border-radius: 10px;
-      }
-
-      &::-moz-range-track {
-        background: transparent;
-        height: 12px;
-        border-radius: 10px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        bottom: 3px;
+        width: var(--fill-width, 81.5%);
+        background: linear-gradient(
+          to right,
+          hsl(6, 100%, 80%) 0%,
+          hsl(335, 100%, 65%) 100%
+        );
+        border-radius: 999px;
+        z-index: -1;
       }
 
       &::-webkit-slider-thumb {
         appearance: none;
-        width: 20px;
-        height: 20px;
+        width: 14px;
+        height: 14px;
         border-radius: 50%;
         background: white;
-        margin-top: -4px;
-        cursor: pointer;
-        position: relative;
+        border: 2px solid hsl(335, 100%, 65%);
         z-index: 2;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
       }
 
       &::-moz-range-thumb {
-        width: 20px;
-        height: 20px;
+        width: 14px;
+        height: 14px;
         border-radius: 50%;
         background: white;
         border: 2px solid hsl(335, 100%, 65%);
         cursor: pointer;
+      }
+
+      &::-webkit-slider-runnable-track {
+        height: 100%;
+        background: transparent;
+      }
+
+      &::-moz-range-track {
+        height: 100%;
+        background: transparent;
       }
     }
 
@@ -73,13 +91,16 @@
       display: flex;
       justify-content: space-between;
       font-size: 12px;
+      font-weight: bolder;
+      line-height: 115%;
+      color: var(--blue-200);
+      margin: 8px 0;
     }
   }
 
   &__notification {
     text-align: center;
     font-size: 12px;
-    margin-top: 0.5rem;
     color: var(--white);
   }
 }
