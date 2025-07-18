@@ -32,10 +32,15 @@ const Stats = ({ minLength, maxLength }: StatsProps) => {
       <div className={c['stats__graph']}>
         <input
           className={c['stats__graph-bar']}
+          id="slider"
           type="range"
           min={0}
           max={max}
           value={used}
+          aria-label="Used storage in gigabytes slider bar"
+          aria-valuemin={0}
+          aria-valuemax={1000}
+          aria-valuenow={used}
           onChange={handleChange}
         />
         <div className={c['stats__graph-length']}>

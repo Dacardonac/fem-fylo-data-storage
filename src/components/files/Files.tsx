@@ -17,6 +17,8 @@ const Files = () => {
           className={c['files__figure-logo']}
           src="/images/logo.svg"
           alt="Logo Fylo"
+          role="img"
+          aria-label="Fylo logo"
         />
       </figure>
       <section className={c['files__icons']}>
@@ -35,6 +37,7 @@ const Files = () => {
           />
         </div>
         <label className={c['files__icons-container']}>
+          <span className={c['files__icons-sr']}>Upload a file</span>
           <img
             className={c['files__icons-svg']}
             src="/images/icon-upload.svg"
@@ -43,6 +46,7 @@ const Files = () => {
           <input
             className={c['files__icons-input']}
             type="file"
+            aria-label="Upload a file"
             onChange={handleFileChange}
             style={{ display: 'none' }}
           />
