@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
+  box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.24);
 
   &__info {
     text-align: center;
@@ -112,7 +113,7 @@
     background-color: var(--white);
     padding: 16px 24.5px;
     border-radius: 10px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 75px 100px 0 rgba(0, 0, 0, 0.24);
 
     &-strong {
       font-size: 40px;
