@@ -15,5 +15,8 @@ body {
 @media (min-width: 768px) {
   body {
     background-image: url('/public/images/bg-desktop.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 }

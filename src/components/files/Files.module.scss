@@ -13,9 +13,11 @@
 
   &__figure {
     user-select: none;
+
     &-logo {
       width: 135px;
       height: 39.27px;
+      cursor: pointer;
     }
   }
 
@@ -68,6 +70,26 @@
 
     &-input {
       display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .files {
+    width: 350px;
+    height: 201px;
+    padding: 40px;
+    margin-bottom: 1rem;
+    border-radius: 10px 100px 10px 10px;
+    gap: 32px;
+
+    &__figure-logo {
+      width: 135px;
+      height: 39.27px;
+    }
+    &__icons-container {
+      width: 48px;
+      height: 48px;
     }
   }
 }

@@ -131,3 +131,45 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stats {
+    width: 540px;
+    height: 154px;
+    padding: 40px 38.5px 0 38.5px;
+    border-radius: 10px;
+    align-items: flex-start;
+    justify-content: start;
+
+    &__info {
+      font-size: 14px;
+      line-height: 115%;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+    &__graph-bar {
+      width: 463px;
+      height: 20px;
+    }
+    &__graph-length {
+      width: 463px;
+      font-size: 12px;
+      line-height: 115%;
+      font-weight: bolder;
+    }
+    &__notification {
+      width: 179px;
+      height: 72px;
+      font-size: 12px;
+      font-weight: bolder;
+      line-height: 115%;
+      left: 50%;
+      transform: translate(-50%, 5px);
+
+      &-strong {
+        font-size: 40px;
+        line-height: 100%;
+      }
+    }
+  }
+}

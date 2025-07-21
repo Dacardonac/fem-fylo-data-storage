@@ -42,6 +42,9 @@ Desktop 🖥️
 
 **![Solution Desktop Screenshot]()**
 
+Tablet 👨‍💻
+
+**![Solution Tablet Screenshot](./public/screenshots/tablet-screenshot.webp)**
 
 Mobile 🤳
 

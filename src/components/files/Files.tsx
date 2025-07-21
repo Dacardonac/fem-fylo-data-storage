@@ -13,13 +13,15 @@ const Files = () => {
   return (
     <article className={c.files}>
       <figure className={c['files__figure']}>
-        <img
-          className={c['files__figure-logo']}
-          src="/images/logo.svg"
-          alt="Logo Fylo"
-          role="img"
-          aria-label="Fylo logo"
-        />
+        <a href="#">
+          <img
+            className={c['files__figure-logo']}
+            src="/images/logo.svg"
+            alt="Logo Fylo"
+            role="img"
+            aria-label="Fylo logo"
+          />
+        </a>
       </figure>
       <section className={c['files__icons']}>
         <div className={c['files__icons-container']}>
