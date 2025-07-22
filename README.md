@@ -40,7 +40,7 @@ This is a solution to the **[Fylo Storage Component challenge on Frontend Mentor
 
 Desktop 🖥️
 
-**![Solution Desktop Screenshot]()**
+**![Solution Desktop Screenshot](./public/screenshots/desktop-screenshot.webp)**
 
 Tablet 👨‍💻
 
