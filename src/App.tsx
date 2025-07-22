@@ -1,10 +1,10 @@
-import './App.module.scss';
+import a from './App.module.scss';
 import Files from './components/files/Files';
 import Stats from './components/stats/Stats';
 
 function App() {
   return (
-    <section>
+    <section className={a.section}>
       <Files />
       <Stats
         minLength="0 GB"

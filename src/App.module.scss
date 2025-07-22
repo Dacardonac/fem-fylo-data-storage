@@ -1,0 +1,9 @@
+@media (min-width: 1024px) {
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    gap: 2rem;
+  }
+}

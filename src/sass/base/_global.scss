@@ -8,14 +8,14 @@ body {
   background-color: var(--blue-950);
   background-image: url('/public/images/bg-mobile.webp');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% 100%;
+  background-position: bottom;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   body {
     background-image: url('/public/images/bg-desktop.webp');
-    background-size: contain;
+    background-size: 100% 375px;
     background-repeat: no-repeat;
     background-position: bottom;
   }
